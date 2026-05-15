@@ -20,24 +20,36 @@ const articles = (await getCollection('blog', ({ data }) => !data.draft))
   <!-- Hero -->
   <section class="hero">
     <div class="hero-container">
-      <div class="hero-badge">
-        <span>✦</span> Para quem está começando
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span>✦</span> Para quem está começando
+        </div>
+        <h1 class="hero-title">
+          Entenda IA do jeito<br />
+          <span class="hero-highlight">que faz sentido</span>
+        </h1>
+        <p class="hero-description">
+          Inteligência Artificial explicada com linguagem simples,
+          exemplos do dia a dia e zero jargão técnico.
+          Aqui você aprende de verdade.
+        </p>
+        <a href="#artigos" class="hero-cta">
+          Ver artigos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </a>
       </div>
-      <h1 class="hero-title">
-        Entenda IA do jeito<br />
-        <span class="hero-highlight">que faz sentido</span>
-      </h1>
-      <p class="hero-description">
-        Inteligência Artificial explicada com linguagem simples,
-        exemplos do dia a dia e zero jargão técnico.
-        Aqui você aprende de verdade.
-      </p>
-      <a href="#artigos" class="hero-cta">
-        Ver artigos
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
-      </a>
+
+      <div class="hero-image-wrapper">
+        <img
+          src="/images/hero.jpeg"
+          alt="Inteligência artificial para iniciantes"
+          class="hero-image"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
     </div>
 
     <div class="hero-decoration" aria-hidden="true">
@@ -71,6 +83,7 @@ const articles = (await getCollection('blog', ({ data }) => !data.draft))
               tags={article.data.tags}
               author={article.data.author}
               readingTime={getReadingTime(article.body)}
+              heroImage={article.data.heroImage}
             />
           ))}
         </div>
@@ -115,6 +128,30 @@ const articles = (await getCollection('blog', ({ data }) => !data.draft))
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image-wrapper {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .hero-badge {
@@ -315,6 +352,16 @@ const articles = (await getCollection('blog', ({ data }) => !data.draft))
     opacity: 0.92;
     transform: translateY(-1px);
     color: var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-image-wrapper {
+      display: none;
+    }
   }
 
   @media (max-width: 640px) {

@@ -4,7 +4,7 @@ description: "Inteligência Artificial parece um assunto complicado, mas a ideia
 pubDate: 2026-05-01
 tags: ["introdução", "conceitos básicos", "ia"]
 author: "Equipe IA Primeiros Passos"
-heroImage: ""
+heroImage: /images/o-que-e-inteligencia-artificial.png
 ---
 
 Você já perguntou ao seu celular qual o melhor restaurante próximo? Ou pediu para um assistente de voz tocar uma música? Se sim, já usou Inteligência Artificial — mesmo sem saber.

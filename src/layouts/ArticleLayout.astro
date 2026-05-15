@@ -87,6 +87,13 @@ const formattedUpdated = updatedDate?.toLocaleDateString('pt-BR', {
         )}
       </header>
 
+      <!-- Cover image -->
+      {image && (
+        <div class="article-cover">
+          <img src={image} alt={title} loading="eager" decoding="async" />
+        </div>
+      )}
+
       <!-- Article body -->
       <div class="prose">
         <slot />
@@ -210,6 +217,22 @@ const formattedUpdated = updatedDate?.toLocaleDateString('pt-BR', {
     font-size: 0.875rem;
     color: var(--color-text-muted);
     font-style: italic;
+  }
+
+  /* Cover image */
+  .article-cover {
+    margin-bottom: 2.5rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    aspect-ratio: 16 / 9;
+  }
+
+  .article-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   /* Article footer */

@@ -4,7 +4,7 @@ description: "O ChatGPT parece conversar como um humano, mas o mecanismo por tr�
 pubDate: 2026-05-08
 tags: ["chatgpt", "como funciona", "modelos de linguagem"]
 author: "Equipe IA Primeiros Passos"
-heroImage: ""
+heroImage: /images/como-funciona-o-chatgpt.png
 ---
 
 Se você já usou o ChatGPT, provavelmente ficou impressionado com a naturalidade das respostas. Mas já parou para pensar: **como ele faz isso?**

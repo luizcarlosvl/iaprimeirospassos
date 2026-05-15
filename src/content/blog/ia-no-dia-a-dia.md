@@ -4,7 +4,7 @@ description: "A inteligência artificial não é coisa de filme de ficção cien
 pubDate: 2026-05-15
 tags: ["exemplos práticos", "cotidiano", "aplicações"]
 author: "Equipe IA Primeiros Passos"
-heroImage: ""
+heroImage: /images/ia-no-dia-a-dia.png
 ---
 
 Quando as pessoas pensam em Inteligência Artificial, logo imaginam robôs futuristas ou computadores superpoderosos que tomam conta do mundo. Mas a realidade é bem mais simples — e está bem mais perto de você.
@@ -61,7 +61,3 @@ Você pode:
 - **Usar as sugestões** do teclado e ferramentas de IA a seu favor, em vez de simplesmente ignorá-las
 
 A IA não está chegando — ela já chegou. E conhecer esse terreno coloca você um passo à frente.
-
----
-
-Quer saber mais sobre algum desses exemplos? Deixe nos comentários qual você achou mais surpreendente!
