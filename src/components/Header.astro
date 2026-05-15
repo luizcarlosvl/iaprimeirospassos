@@ -1,0 +1,119 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', label: 'Início' },
+  { href: '/#artigos', label: 'Artigos' },
+];
+---
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo" aria-label="IA Primeiros Passos — Início">
+      <span class="logo-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="22" fill="#7c3aed"/>
+          <text x="50" y="66" font-family="-apple-system,sans-serif" font-size="46" font-weight="800" fill="white" text-anchor="middle">IA</text>
+        </svg>
+      </span>
+      <span class="logo-text">
+        <strong>IA</strong> Primeiros Passos
+      </span>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        {navLinks.map(link => (
+          <li>
+            <a
+              href={link.href}
+              class:list={[{ active: currentPath === link.href }]}
+              aria-current={currentPath === link.href ? 'page' : undefined}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+  }
+
+  .logo:hover {
+    opacity: 0.85;
+    color: var(--color-text);
+  }
+
+  .logo-icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .logo-text strong {
+    color: var(--color-primary);
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.125rem;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.4375rem 0.875rem;
+    border-radius: 0.5rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition: color 0.15s, background-color 0.15s;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+  }
+
+  @media (max-width: 480px) {
+    .logo-text {
+      display: none;
+    }
+  }
+</style>

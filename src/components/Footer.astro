@@ -1,0 +1,151 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <strong>IA</strong> Primeiros Passos
+        </a>
+        <p class="footer-tagline">
+          Inteligência artificial explicada de um jeito que qualquer pessoa entende.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Blog</h3>
+          <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/#artigos">Artigos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="/rss.xml">Feed RSS</a></li>
+            <li><a href="/sitemap-index.xml">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {year} IA Primeiros Passos. Feito com
+        <a href="https://astro.build" target="_blank" rel="noopener noreferrer">Astro</a>
+        e hospedado na
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: auto;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-bg-secondary);
+    padding: 3rem 0 1.5rem;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-logo {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-logo strong {
+    color: var(--color-primary);
+  }
+
+  .footer-tagline {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+    max-width: 28ch;
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .footer-col h3 {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.875rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-col a {
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer-col a:hover {
+    color: var(--color-primary);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.25rem;
+  }
+
+  .footer-bottom p {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+  }
+
+  .footer-bottom a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    transition: color 0.15s, text-decoration-color 0.15s;
+  }
+
+  .footer-bottom a:hover {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+  }
+
+  @media (max-width: 640px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .footer-links {
+      gap: 2rem;
+    }
+  }
+</style>
