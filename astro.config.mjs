@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://ia-primeiros-passos.vercel.app',
+  site: 'https://iaprimeirospassos.com.br',
   integrations: [
     mdx(),
     sitemap(),

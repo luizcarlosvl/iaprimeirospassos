@@ -1,7 +1,7 @@
 ---
 title: "Como o ChatGPT funciona? A explicação que ninguém deu antes"
 description: "O ChatGPT parece conversar como um humano, mas o mecanismo por trás disso é diferente do que você imagina. Entenda de vez, sem precisar ser programador."
-pubDate: 2025-05-08
+pubDate: 2026-05-08
 tags: ["chatgpt", "como funciona", "modelos de linguagem"]
 author: "Equipe IA Primeiros Passos"
 heroImage: ""

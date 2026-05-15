@@ -1,7 +1,7 @@
 ---
 title: "O que é Inteligência Artificial? Um guia para quem está começando"
 description: "Inteligência Artificial parece um assunto complicado, mas a ideia por trás dela é surpreendentemente simples. Neste artigo, vamos desmistificar o conceito de uma vez por todas."
-pubDate: 2025-05-01
+pubDate: 2026-05-01
 tags: ["introdução", "conceitos básicos", "ia"]
 author: "Equipe IA Primeiros Passos"
 heroImage: ""

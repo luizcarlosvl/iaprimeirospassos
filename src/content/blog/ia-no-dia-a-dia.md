@@ -1,7 +1,7 @@
 ---
 title: "IA no dia a dia: 10 exemplos que você já usa (e talvez não saiba)"
 description: "A inteligência artificial não é coisa de filme de ficção científica. Ela já está presente em aplicativos que você usa todo dia. Descubra quais são e como funcionam."
-pubDate: 2025-05-15
+pubDate: 2026-05-15
 tags: ["exemplos práticos", "cotidiano", "aplicações"]
 author: "Equipe IA Primeiros Passos"
 heroImage: ""
