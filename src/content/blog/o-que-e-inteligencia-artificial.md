@@ -59,3 +59,10 @@ Agora que você entende o básico, é hora de se aprofundar em como essas tecnol
 No próximo artigo, vamos explorar como o ChatGPT funciona por dentro. Spoiler: é mais parecido com "adivinhar a próxima palavra" do que com "pensar de verdade".
 
 Até lá!
+
+## 📚 Quer se aprofundar?
+
+Dois livros que recomendo para quem quer ir além deste artigo:
+
+- [**Introdução à Inteligência Artificial: uma Abordagem Não Técnica**](https://amzn.to/4frGWIc) — Tom Taulli. Mais de 400 avaliações positivas. Ideal para quem quer entender IA sem precisar ser programador.
+- [**O que é Inteligência Artificial? O ABC da IA**](https://amzn.to/4nDaW6b) — Rodrigo Rodrigues. Direto ao ponto, disponível no Kindle Unlimited.

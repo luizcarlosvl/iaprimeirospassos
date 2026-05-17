@@ -73,3 +73,10 @@ Desconfie quando ele falar de:
 ## Mais por vir
 
 No próximo artigo, vamos ver onde a IA já aparece no seu dia a dia — de formas que você provavelmente ainda não percebeu. Vai ser revelador!
+
+## 📚 Quer se aprofundar?
+
+Para entender ainda mais como o ChatGPT e outros modelos funcionam por dentro, recomendo:
+
+- [**Guia da Inteligência Artificial: do Iniciante ao Nerd**](https://amzn.to/3RiAx8k) — André Barcaui. O mais completo em português para quem está começando.
+- [**O que é Inteligência Artificial? O ABC da IA**](https://amzn.to/4nDaW6b) — Rodrigo Rodrigues. Rápido de ler e muito prático.

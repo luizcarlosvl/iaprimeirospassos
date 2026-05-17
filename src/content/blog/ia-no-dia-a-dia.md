@@ -61,3 +61,7 @@ Você pode:
 - **Usar as sugestões** do teclado e ferramentas de IA a seu favor, em vez de simplesmente ignorá-las
 
 A IA não está chegando — ela já chegou. E conhecer esse terreno coloca você um passo à frente.
+
+## 📚 Quer se aprofundar?
+
+Se você se surpreendeu com quantas coisas já usam IA no dia a dia, imagine o que mais está por vir. O livro [**Introdução à Inteligência Artificial: uma Abordagem Não Técnica**](https://amzn.to/4frGWIc) explica tudo isso de forma acessível e sem complicação.

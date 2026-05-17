@@ -148,4 +148,8 @@ A IA não é mágica — é uma ferramenta poderosa que responde na medida do qu
 
 E a melhor parte: você não precisa aprender nenhuma linguagem especial para isso. É só conversar com mais clareza — o mesmo que funciona com qualquer pessoa.
 
+## 📚 Quer se aprofundar?
+
+Se esse artigo fez sentido para você, o livro [**Guia da Inteligência Artificial: do Iniciante ao Nerd**](https://amzn.to/3RiAx8k) do André Barcaui é o próximo passo natural. Escrito em português, sem jargão técnico, com 4,8 estrelas em mais de 40 avaliações. Vale muito.
+
 No próximo artigo vamos ver como usar IA para tarefas do dia a dia que a maioria das pessoas nunca pensou em tentar. Até lá!
