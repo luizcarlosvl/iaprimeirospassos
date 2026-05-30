@@ -28,9 +28,7 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
 });
 ---
 
-<article class="card">
-  <a href={`/blog/${slug}`} class="card-link" tabindex="-1" aria-hidden="true"></a>
-
+<a href={`/blog/${slug}`} class="card">
   {heroImage && (
     <div class="card-cover">
       <img src={heroImage} alt={title} loading="lazy" decoding="async" />
@@ -46,9 +44,7 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
       </div>
     )}
 
-    <h2 class="card-title">
-      <a href={`/blog/${slug}`}>{title}</a>
-    </h2>
+    <h2 class="card-title">{title}</h2>
 
     <p class="card-description">{description}</p>
 
@@ -62,7 +58,7 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
       )}
     </div>
   </div>
-</article>
+</a>
 
 <style>
   .card {
@@ -74,18 +70,14 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
     transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
   }
 
   .card:hover {
     box-shadow: var(--shadow-lg);
     border-color: #c4b5fd;
     transform: translateY(-2px);
-  }
-
-  .card-link {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
   }
 
   /* Cover image */
@@ -112,8 +104,6 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    position: relative;
-    z-index: 1;
     flex: 1;
     padding: 1.75rem;
   }
@@ -141,22 +131,11 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
     font-weight: 700;
     line-height: 1.35;
     margin: 0;
-  }
-
-  .card-title a {
     color: var(--color-text);
-    text-decoration: none;
     transition: color 0.15s;
   }
 
-  .card-title a::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
-
-  .card:hover .card-title a {
+  .card:hover .card-title {
     color: var(--color-primary);
   }
 
